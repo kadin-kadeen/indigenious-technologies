@@ -1,48 +1,85 @@
 body {
-    background-color: blueviolet;
-    color: aquamarine;
-    font-family: 'Courier New', Courier, monospace;
-    background-image: url(https://static01.nyt.com/images/2020/02/26/opinion/26Moezzi/26Moezzi-mobileMasterAt3x.jpg);
+    background-color: #000000; 
+    color: rgb(20, 147, 16);
+    background-image: url(edna.png), url(emma.png);
+    background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: left bottom, right bottom;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-shadow: #FC0 1px 0 10px;
 }
-h1, p {
+.heading {
     text-align: center;
+    margin: 1em auto;
+    max-width: 500px;
+    padding: 0 20px 0;
 }
-h2{
+h1{
     text-align: left;
-    text-transform: lowercase;
+    text-transform: capitalize;
+    text-size-adjust: 400px;
+    font-family: 'Alegreya', serif; 
+    font-weight: 500;
 }
 form {
+    width: 60vw;
     max-width: 500px;
+    min-width: 350px;
     margin: 0 auto;
-}
-input {
-    border: 1px solid #000000;
-}
-.myclass {
-    background-image: "image/*, png.";
-    
-}
-.multi-bg-example {
-    width: 100%;
-    height: 500px;
-    background-image: url(https://static01.nyt.com/images/2020/02/26/opinion/26Moezzi/26Moezzi-mobileMasterAt3x.jpg);
-    background-repeat: repeat, repeat-x, repeat-y;
-    background-position: center, left;
-}
-.scroller {
-    height: 500px;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    padding-bottom: 50px;
 }
 
-.scroller section {
-    scroll-snap-align: start;
+input, textarea, select{
+    width: 100%;
+    margin: 10px 0 0 0;
+    min-height: 30px;
+    padding: 15px 20px;
+    border: 5px solid #000000;
+    border-color: rgba(34, 61, 215, 0.809);
+    background-color: #000000;
+    color: #ffff;
+    border-radius: 16px;
+    box-sizing: border-box;
+    text-emphasis-color: white;
 }
-.content-box {
-    padding: 0.3em;
-    column-count: 3;
-    column-rule: inset 5px rgba(222, 200, 218, 0.857);
-  }
-  
+
+.inline{
+    width: unset;
+    margin: 0 7px 0 0;
+    vertical-align: middle;
+}
+
+label{
+    display: block;
+    margin: 15px 0 0 0;
+}
+
+fieldset{
+    border: none;
+    padding: 2em 0; 
+    border-bottom: 1px dashed #ffff;
+}
+
+fieldset:last-of-type{
+    border-bottom: none;
+}
+
+input[type=submit] {
+    display: block;
+    color: #fffcfc;
+    margin: 1em auto;
+    font-size: 17px;
+    max-width: 400px;
+    font-family: 'Alegreya', serif;
+    font-weight: 300px;
+}
+
+.quote{
+    text-align: center;
+    margin: 2em auto;
+    max-width: 700px;
+    padding: 10px 20px 0;
+    color: #929294;
+}
